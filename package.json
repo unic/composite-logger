@@ -1,7 +1,8 @@
 {
   "name": "@unic/composite-logger",
   "version": "0.0.0",
-  "description": "Lightweight logger composite to help you debug your modules and disable when you go to production",
+  "description":
+    "Lightweight logger composite to help you debug your modules and disable when you go to production",
   "scripts": {
     "start": "npm run dev",
     "dev": "ava --watch",
@@ -14,15 +15,11 @@
     "test": "ava"
   },
   "main": "dist/logger.js",
-  "module": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unic/composite-logger.git"
   },
-  "keywords": [
-    "composite",
-    "logger"
-  ],
+  "keywords": ["composite", "logger"],
   "author": "Christian Sany",
   "license": "Apache-2.0",
   "bugs": {
@@ -48,20 +45,11 @@
     "webpack": "3.10.0"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   },
   "eslintConfig": {
-    "extends": [
-      "airbnb-base",
-      "prettier"
-    ],
+    "extends": ["airbnb-base", "prettier"],
     "env": {
       "browser": true,
       "node": true
@@ -76,23 +64,15 @@
         }
       ]
     },
-    "plugins": [
-      "prettier"
-    ]
+    "plugins": ["prettier"]
   },
   "ava": {
-    "files": [
-      "src/**/*.spec.js"
-    ],
-    "source": [
-      "src/**/*.js"
-    ],
+    "files": ["src/**/*.spec.js"],
+    "source": ["src/**/*.js"],
     "concurrency": 5,
     "failFast": true,
     "powerAssert": true,
-    "require": [
-      "babel-register"
-    ],
+    "require": ["babel-register"],
     "babel": "inherit"
   },
   "dependencies": {}

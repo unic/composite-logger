@@ -31,13 +31,13 @@ Helpful Ressources:
 **Examples**
 ```js
 // Applying the composite to a new object literal
-const obj = Object.assign({}, logger());
+const obj = Object.assign({}, logger('custom-prefix'));
 
 // Equivalent with lodash.merge
-const obj = _.merge({}, logger());
+const obj = _.merge({}, logger('custom-prefix'));
 
 // Just use it as a
-const obj = logger();
+const obj = logger('custom-prefix');
 ```
 
 ## API
